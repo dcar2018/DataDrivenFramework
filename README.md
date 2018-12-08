@@ -2,9 +2,6 @@
 DataDrivenFramework in Java 
 
 
-
-
-
 ## git Commands
 
 ### Step 1
@@ -34,3 +31,13 @@ At the top of your GitHub repository's Quick Setup page, click to copy the remot
     // Pushes the changes in your local repository up to the remote repository you specified as the origin
 
 
+### Step 2
+
+#### Get latest code from remote repository to local
+
+###### 1. no conflicts with new-online version
+   $ git fetch origin
+   $ git status
+   $ git pull origin master
+   
+   
