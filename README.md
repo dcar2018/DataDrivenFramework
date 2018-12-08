@@ -35,7 +35,7 @@ At the top of your GitHub repository's Quick Setup page, click to copy the remot
 
 #### Get latest code from remote repository to local
 
-###### 1. no conflicts with new-online version
+###### 1. When no conflicts with new-online version
     $ git fetch origin
     $ git status
     $ git pull origin master
