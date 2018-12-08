@@ -4,7 +4,7 @@ DataDrivenFramework in Java
 
 ## git Commands
 
-### Step 1
+## Step 1 : 
 
 #### Adding an existing project to GitHub using the command line
 
@@ -31,7 +31,7 @@ At the top of your GitHub repository's Quick Setup page, click to copy the remot
     // Pushes the changes in your local repository up to the remote repository you specified as the origin
 
 
-### Step 2
+## Step 2 : 
 
 #### Get latest code from remote repository to local
 
@@ -41,7 +41,7 @@ At the top of your GitHub repository's Quick Setup page, click to copy the remot
     $ git pull origin master
    
 ###### 
-### Step 3
+## Step 3
 
 #### Work with branching for day to day work - Sample git workflow
 
@@ -52,8 +52,7 @@ At the top of your GitHub repository's Quick Setup page, click to copy the remot
     $ git push -u origin SS-123
 ###### do some work...
 ###### commit your changes
-    $ git commit -m 'SS-123 Fixed bug where expired prepay entitlements were
-displaying negative days remaining'
+    $ git commit -m 'SS-123 Fixed bug where expiry date not correct'
 ###### push to your remote branch
     $ git push origin SS-123
 ###### update your local repo with changes from the remote
