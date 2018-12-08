@@ -15,7 +15,7 @@ DataDrivenFramework in Java
 ###### 2. Open Git Bash.
 ###### 3. Change the current working directory to your local project.
 ###### 4. Initialize the local directory as a Git repository.
-   **  $ git init **
+    $ git init
 ###### 5. Add the files in your new local repository. This stages them for the first commit.
     $ git add .
     // Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
