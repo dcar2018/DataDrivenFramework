@@ -43,29 +43,28 @@ At the top of your GitHub repository's Quick Setup page, click to copy the remot
 ###### 
 ### Step 3
 
-#### Work with branching for day to day work
-Sample git workflow
+#### Work with branching for day to day work - Sample git workflow
 
 
 ###### create a new local branch named after the current story
-git checkout -b SS-123
+    $ git checkout -b SS-123
 ###### create a remote branch which our local one will track
-git push -u origin SS-123
+    $ git push -u origin SS-123
 ###### do some work...
 ###### commit your changes
-git commit -m 'SS-123 Fixed bug where expired prepay entitlements were
+    $ git commit -m 'SS-123 Fixed bug where expired prepay entitlements were
 displaying negative days remaining'
 ###### push to your remote branch
-git push origin SS-123
+    $ git push origin SS-123
 ###### update your local repo with changes from the remote
-git fetch origin
+    $ git fetch origin
 ###### rebase onto master
-git rebase origin/master
+    $ git rebase origin/master
 ###### push your rebased branch up to your remote
-git push origin SS-123 -f
+    $ git push origin SS-123 -f
 
 ###### create a new local branch based on an existing remote branch
-git checkout -b SS-123 origin/SS-123
-Most other tasks will be performed directly via the github interface
+    $ git checkout -b SS-123 origin/SS-123
+    // Most other tasks will be performed directly via the github interface
 
 
