@@ -50,7 +50,8 @@ At the top of your GitHub repository's Quick Setup page, click to copy the remot
     $ git checkout -b SS-123
 ###### create a remote branch which our local one will track
     $ git push -u origin SS-123
-###### do some work...
+###### do some work... then add your files ??
+    $ git add . / git add -all / git add <filename>
 ###### commit your changes
     $ git commit -m 'SS-123 Fixed bug where expiry date not correct'
 ###### push to your remote branch
