@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Data Driven Basics">
+    <!--test verbose="2" preserve-order="true" name="C:/AutoSamples/dcar2018_Udemy/DataDrivenFramework"-->
+    <test name="Bank Manager Login Test">
+        <classes>
+            <class name="com.company.testcases.BankManagerLoginTest">
+                <!--methods>
+                    <include name="loginAsBankManager"/>
+                </methods-->
+            </class>
+        </classes>
+    </test>
+
+    <test name="Add Customer Test">
+        <classes>
+            <class name="com.company.testcases.AddCustomerTest">
+                <!--methods>
+                    <include name="loginAsBankManager"/>
+                </methods-->
+            </class>
+        </classes>
+    </test>
+</suite>
