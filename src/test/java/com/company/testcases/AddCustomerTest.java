@@ -5,6 +5,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -33,6 +34,7 @@ public class AddCustomerTest extends TestBase {
         int rows = excel.getRowCount(sheetName);
         int cols = excel.getColumnCount(sheetName);
         log.debug("reading excel data rows and cols = " + rows+cols);
+        Reporter.log("reading excel data rows and cols = " + rows+cols);
         Object[][] data = new Object[rows - 1][cols];
 
         for (int rowNum = 2; rowNum <= rows; rowNum++) {

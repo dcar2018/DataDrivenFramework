@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
 <suite name="Data Driven Basics">
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <!--listener class-name="com.w2a.listeners.CustomListeners"/-->
+    </listeners>
+
+
     <!--test verbose="2" preserve-order="true" name="C:/AutoSamples/dcar2018_Udemy/DataDrivenFramework"-->
     <test name="Bank Manager Login Test">
         <classes>
