@@ -1,0 +1,13 @@
+07:39:10,536 DEBUG devpinoyLogger:54 - Config file loaded
+07:39:10,536 DEBUG devpinoyLogger:65 - OR file loaded
+07:39:14,539 DEBUG devpinoyLogger:78 - Chrome launched
+07:39:17,571 DEBUG devpinoyLogger:86 - Navigated to http://www.way2automation.com/angularjs-protractor/banking/#/login
+07:39:18,796 DEBUG devpinoyLogger:16 - Starting login as bank manager
+07:39:21,594 DEBUG devpinoyLogger:20 - End login as bank manager
+07:39:22,207 DEBUG devpinoyLogger:41 - reading excel data rows and cols = 24
+07:39:22,207 DEBUG devpinoyLogger:49 - reading excel data Dan
+07:39:22,207 DEBUG devpinoyLogger:49 - reading excel data Car
+07:39:22,207 DEBUG devpinoyLogger:49 - reading excel data syd2148
+07:39:22,207 DEBUG devpinoyLogger:49 - reading excel data Customer added successfully
+07:39:25,370 DEBUG devpinoyLogger:30 - End Add Customer Test
+07:39:26,730 DEBUG devpinoyLogger:109 - Test execution completed
