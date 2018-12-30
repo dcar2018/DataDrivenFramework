@@ -12,19 +12,24 @@ import org.testng.annotations.Test;
 public class AddCustomerTest extends TestBase {
 
     @Test(dataProvider = "getData")
-    public void addCustomer(String firstName, String lastName, String postcode,String alerttext) throws InterruptedException {
+    public void addCustomer(String firstName, String lastName, String postcode, String alerttext) throws InterruptedException {
+        //driver.get(config.getProperty("testsiteurl"));
+
+        //driver.findElement(By.cssSelector(or.getProperty("bmlBtn"))).click();
+        //Assert.assertTrue(isElementPresent(By.cssSelector(or.getProperty("addCustomerBtn"))));
 
         driver.findElement(By.cssSelector(or.getProperty("addCustomerBtn"))).click();
         driver.findElement(By.cssSelector(or.getProperty("firstName"))).sendKeys(firstName);
         driver.findElement(By.cssSelector(or.getProperty("lastName"))).sendKeys(lastName);
         driver.findElement(By.cssSelector(or.getProperty("postcode"))).sendKeys(postcode);
-
         driver.findElement(By.cssSelector(or.getProperty("addBtn"))).click();
-
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
         Thread.sleep(2000);
         Assert.assertTrue(alert.getText().contains(alerttext));
-
+        alert.accept();
+        log.debug("End Add Customer Test");
+        Reporter.log("Reporter > End Add Customer Test");
+        Assert.fail("Customer not added successfully");
     }
 
     @DataProvider
@@ -33,8 +38,8 @@ public class AddCustomerTest extends TestBase {
         String sheetName = "AddCustomerTest";
         int rows = excel.getRowCount(sheetName);
         int cols = excel.getColumnCount(sheetName);
-        log.debug("reading excel data rows and cols = " + rows+cols);
-        Reporter.log("reading excel data rows and cols = " + rows+cols);
+        log.debug("reading excel data rows and cols = " + rows + cols);
+        Reporter.log("reading excel data rows and cols = " + rows + cols);
         Object[][] data = new Object[rows - 1][cols];
 
         for (int rowNum = 2; rowNum <= rows; rowNum++) {

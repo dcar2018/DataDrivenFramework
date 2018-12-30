@@ -7,7 +7,7 @@
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-        <!--listener class-name="com.w2a.listeners.CustomListeners"/-->
+        <listener class-name="com.company.listeners.CustomListeners"/>
     </listeners>
 
 
@@ -15,20 +15,33 @@
     <test name="Bank Manager Login Test">
         <classes>
             <class name="com.company.testcases.BankManagerLoginTest">
-                <!--methods>
+                <methods>
                     <include name="loginAsBankManager"/>
-                </methods-->
+                </methods>
             </class>
         </classes>
     </test>
 
+
+    <!--test name="Bank Manager Login Test">
+        <classes>
+            <class name="com.company.testcases.BankManagerLoginTest">
+                <methods>
+                    <include name="loginAsBankManager"/>
+                </methods>
+            </class>
+        </classes>
+    </test-->
+
     <test name="Add Customer Test">
         <classes>
             <class name="com.company.testcases.AddCustomerTest">
-                <!--methods>
-                    <include name="loginAsBankManager"/>
-                </methods-->
+                <methods>
+                    <include name="addCustomer"/>
+                </methods>
             </class>
         </classes>
     </test>
+
+
 </suite>
