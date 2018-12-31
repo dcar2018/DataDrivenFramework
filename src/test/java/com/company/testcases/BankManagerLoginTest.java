@@ -12,14 +12,25 @@ public class BankManagerLoginTest extends TestBase {
     public void loginAsBankManager() throws InterruptedException {
         //below moved to listener
         //System.setProperty("org.uncommons.reportng.escape-output", "false");
-        driver.get(config.getProperty("testsiteurl"));
+
+        //driver.get(config.getProperty("testsiteurl")); //if need to start test from HomePage
+
+        //Below line for log4j legger
         log.debug("Starting login as bank manager");
-        driver.findElement(By.cssSelector(or.getProperty("bmlBtn"))).click();
-        Assert.assertTrue(isElementPresent(By.cssSelector(or.getProperty("addCustomerBtn"))));
+
+        //below line simplified with the custom class for click
+        //driver.findElement(By.cssSelector(or.getProperty("bmlBtn_CSS"))).click();
+        click("bmlBtn_CSS");
+
+        Assert.assertTrue(isElementPresent(By.cssSelector(or.getProperty("addCustomerBtn_CSS"))));
         Thread.sleep(2000);
+
+        //Below line for log4j legger
         log.debug("End login as bank manager");
+
+        //Below line for testng reporter
         Reporter.log("Reporter > End login as bank manager");
-        //Assert.fail("I failed the test");
+        Assert.fail("I failed the test");
 
         //add log to Testng report
         //below moved to listener

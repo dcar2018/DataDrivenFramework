@@ -18,11 +18,19 @@ public class AddCustomerTest extends TestBase {
         //driver.findElement(By.cssSelector(or.getProperty("bmlBtn"))).click();
         //Assert.assertTrue(isElementPresent(By.cssSelector(or.getProperty("addCustomerBtn"))));
 
-        driver.findElement(By.cssSelector(or.getProperty("addCustomerBtn"))).click();
-        driver.findElement(By.cssSelector(or.getProperty("firstName"))).sendKeys(firstName);
-        driver.findElement(By.cssSelector(or.getProperty("lastName"))).sendKeys(lastName);
-        driver.findElement(By.cssSelector(or.getProperty("postcode"))).sendKeys(postcode);
-        driver.findElement(By.cssSelector(or.getProperty("addBtn"))).click();
+        //below line simplified with the custom class for click
+        //driver.findElement(By.cssSelector(or.getProperty("addCustomerBtn_CSS"))).click();
+        //driver.findElement(By.cssSelector(or.getProperty("firstName_CSS"))).sendKeys(firstName);
+        //driver.findElement(By.cssSelector(or.getProperty("lastName_CSS"))).sendKeys(lastName);
+        //driver.findElement(By.cssSelector(or.getProperty("postcode_CSS"))).sendKeys(postcode);
+        //driver.findElement(By.cssSelector(or.getProperty("addBtn_CSS"))).click();
+        click("addCustomerBtn_CSS");
+        type("firstName_CSS",firstName);
+        type("lastName_CSS",lastName);
+        type("postcode_CSS",postcode);
+        click("addBtn_CSS");
+
+
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
         Thread.sleep(2000);
         Assert.assertTrue(alert.getText().contains(alerttext));
