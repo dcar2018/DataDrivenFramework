@@ -1,6 +1,10 @@
 package com.company.base;
 
 import com.company.utilities.ExcelReader;
+import com.company.utilities.ExtentManager;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -42,6 +46,10 @@ public class TestBase {
     // public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
     public static ExcelReader excel = new ExcelReader("C:\\AutoSamples\\dcar2018_Udemy\\DataDrivenFramework\\src\\test\\resources\\excel\\testdata.xlsx");
     public static WebDriverWait wait;
+
+    public ExtentReports extentReport = ExtentManager.getInstance();
+    public static ExtentTest extentTest;
+
 
     @BeforeSuite
     public void setUp() {
@@ -89,6 +97,46 @@ public class TestBase {
         wait = new WebDriverWait(driver, 5);
     }
 
+
+
+    public void click(String locator){
+        if (locator.endsWith("_CSS")) {
+            driver.findElement(By.cssSelector(or.getProperty(locator))).click();
+        }
+        else if (locator.endsWith("_ID")) {
+            driver.findElement(By.id(or.getProperty(locator))).click();
+        }
+        else if (locator.endsWith("_XPATH")) {
+            driver.findElement(By.xpath(or.getProperty(locator))).click();
+        }
+        else if (locator.endsWith("_CLASSNAME")) {
+            driver.findElement(By.className(or.getProperty(locator))).click();
+        }
+
+        //Add logs for extent reports
+        extentTest.log(LogStatus.INFO, "Clicking on : "+locator);
+
+    }
+
+    public void type(String locator, String value){
+
+        if (locator.endsWith("_CSS")) {
+            driver.findElement(By.cssSelector(or.getProperty(locator))).sendKeys(value);
+        }
+        else if (locator.endsWith("_ID")) {
+            driver.findElement(By.id(or.getProperty(locator))).sendKeys(value);
+        }
+        else if (locator.endsWith("_XPATH")) {
+            driver.findElement(By.xpath(or.getProperty(locator))).sendKeys(value);
+        }
+        else if (locator.endsWith("_CLASSNAME")) {
+            driver.findElement(By.className(or.getProperty(locator))).sendKeys(value);
+        }
+
+        //Add logs for extent reports
+        extentTest.log(LogStatus.INFO, "Typing in : "+locator+" entered value as "+value);
+
+    }
 
     public boolean isElementPresent(By by) {
         try {
