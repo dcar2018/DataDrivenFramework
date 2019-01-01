@@ -16,7 +16,7 @@
         <classes>
             <class name="com.company.testcases.BankManagerLoginTest">
                 <methods>
-                    <include name="loginAsBankManager"/>
+                    <include name="loginAsBankManagerTest"/>
                 </methods>
             </class>
         </classes>
@@ -37,7 +37,17 @@
         <classes>
             <class name="com.company.testcases.AddCustomerTest">
                 <methods>
-                    <include name="addCustomer"/>
+                    <include name="addCustomerTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Open Account Test">
+        <classes>
+            <class name="com.company.testcases.OpenAccountTest">
+                <methods>
+                    <include name="openAccountTest"/>
                 </methods>
             </class>
         </classes>
