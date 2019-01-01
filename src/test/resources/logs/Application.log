@@ -1,13 +1,26 @@
-01/01/2019 08:01:21 devpinoyLogger Config file loaded
-01/01/2019 08:01:21 devpinoyLogger OR file loaded
-01/01/2019 08:01:26 devpinoyLogger Chrome launched
-01/01/2019 08:01:29 devpinoyLogger Navigated to http://www.way2automation.com/angularjs-protractor/banking/#/login
-01/01/2019 08:01:30 devpinoyLogger Starting login as bank manager
-01/01/2019 08:01:32 devpinoyLogger End login as bank manager
-01/01/2019 08:01:33 devpinoyLogger reading excel data rows and cols = 24
-01/01/2019 08:01:33 devpinoyLogger reading excel data Dan
-01/01/2019 08:01:33 devpinoyLogger reading excel data Car
-01/01/2019 08:01:33 devpinoyLogger reading excel data syd2148
-01/01/2019 08:01:33 devpinoyLogger reading excel data Customer added successfully
-01/01/2019 08:01:36 devpinoyLogger End Add Customer Test
-01/01/2019 08:01:38 devpinoyLogger Test execution completed
+02/01/2019 08:23:05 devpinoyLogger Config file loaded
+02/01/2019 08:23:05 devpinoyLogger OR file loaded
+02/01/2019 08:23:10 devpinoyLogger Chrome launched
+02/01/2019 08:23:13 devpinoyLogger Navigated to http://www.way2automation.com/angularjs-protractor/banking/#/login
+02/01/2019 08:23:14 devpinoyLogger Starting login as bank manager
+02/01/2019 08:23:18 devpinoyLogger End login as bank manager
+02/01/2019 08:23:18 devpinoyLogger reading excel data rows and cols = 44
+02/01/2019 08:23:18 devpinoyLogger reading excel data Dan
+02/01/2019 08:23:18 devpinoyLogger reading excel data Car
+02/01/2019 08:23:18 devpinoyLogger reading excel data syd2148
+02/01/2019 08:23:18 devpinoyLogger reading excel data Customer added successfully
+02/01/2019 08:23:18 devpinoyLogger reading excel data Sam
+02/01/2019 08:23:18 devpinoyLogger reading excel data Tar
+02/01/2019 08:23:18 devpinoyLogger reading excel data syd2143
+02/01/2019 08:23:18 devpinoyLogger reading excel data Customer added successfully
+02/01/2019 08:23:18 devpinoyLogger reading excel data Pam
+02/01/2019 08:23:18 devpinoyLogger reading excel data Sen
+02/01/2019 08:23:18 devpinoyLogger reading excel data syd2146
+02/01/2019 08:23:18 devpinoyLogger reading excel data Customer added successfully
+02/01/2019 08:23:21 devpinoyLogger End Add Customer Test
+02/01/2019 08:23:26 devpinoyLogger End Add Customer Test
+02/01/2019 08:23:31 devpinoyLogger End Add Customer Test
+02/01/2019 08:23:34 devpinoyLogger reading excel data rows and cols = 22
+02/01/2019 08:23:34 devpinoyLogger reading excel data Dan Car
+02/01/2019 08:23:34 devpinoyLogger reading excel data Rupee
+02/01/2019 08:23:44 devpinoyLogger Test execution completed

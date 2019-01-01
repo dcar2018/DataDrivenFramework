@@ -2,17 +2,19 @@ package com.company.base;
 
 import com.company.utilities.ExcelReader;
 import com.company.utilities.ExtentManager;
+import com.company.utilities.TestUtil;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -98,45 +100,62 @@ public class TestBase {
     }
 
 
-
-    public void click(String locator){
+    public void click(String locator) {
         if (locator.endsWith("_CSS")) {
             driver.findElement(By.cssSelector(or.getProperty(locator))).click();
-        }
-        else if (locator.endsWith("_ID")) {
+        } else if (locator.endsWith("_ID")) {
             driver.findElement(By.id(or.getProperty(locator))).click();
-        }
-        else if (locator.endsWith("_XPATH")) {
+        } else if (locator.endsWith("_XPATH")) {
             driver.findElement(By.xpath(or.getProperty(locator))).click();
-        }
-        else if (locator.endsWith("_CLASSNAME")) {
+        } else if (locator.endsWith("_CLASSNAME")) {
             driver.findElement(By.className(or.getProperty(locator))).click();
         }
 
         //Add logs for extent reports
-        extentTest.log(LogStatus.INFO, "Clicking on : "+locator);
+        extentTest.log(LogStatus.INFO, "Clicking on : " + locator);
 
     }
 
-    public void type(String locator, String value){
+    public void type(String locator, String value) {
 
         if (locator.endsWith("_CSS")) {
             driver.findElement(By.cssSelector(or.getProperty(locator))).sendKeys(value);
-        }
-        else if (locator.endsWith("_ID")) {
+        } else if (locator.endsWith("_ID")) {
             driver.findElement(By.id(or.getProperty(locator))).sendKeys(value);
-        }
-        else if (locator.endsWith("_XPATH")) {
+        } else if (locator.endsWith("_XPATH")) {
             driver.findElement(By.xpath(or.getProperty(locator))).sendKeys(value);
-        }
-        else if (locator.endsWith("_CLASSNAME")) {
+        } else if (locator.endsWith("_CLASSNAME")) {
             driver.findElement(By.className(or.getProperty(locator))).sendKeys(value);
         }
 
         //Add logs for extent reports
-        extentTest.log(LogStatus.INFO, "Typing in : "+locator+" entered value as "+value);
+        extentTest.log(LogStatus.INFO, "Typing in : " + locator + " entered value as " + value);
 
     }
+
+    static WebElement dropdown;
+
+    public void select(String locator, String value) {
+
+
+        if (locator.endsWith("_CSS")) {
+            dropdown = driver.findElement(By.cssSelector(or.getProperty(locator)));
+        } else if (locator.endsWith("_ID")) {
+            dropdown = driver.findElement(By.id(or.getProperty(locator)));
+        } else if (locator.endsWith("_XPATH")) {
+            dropdown = driver.findElement(By.xpath(or.getProperty(locator)));
+        } else if (locator.endsWith("_CLASSNAME")) {
+            dropdown = driver.findElement(By.className(or.getProperty(locator)));
+        }
+        //dropdown.sendKeys(Keys.ENTER);
+        Select select = new Select(dropdown);
+        select.selectByVisibleText(value);
+
+        //Add logs for extent reports
+        extentTest.log(LogStatus.INFO, "Selecting from the drop down : " + locator + " select value as " + value);
+
+    }
+
 
     public boolean isElementPresent(By by) {
         try {
@@ -148,6 +167,64 @@ public class TestBase {
         }
 
     }
+
+
+    public static void verifyEquals(String expected, String actual) {
+
+        try {
+            Assert.assertEquals(actual, expected);
+
+            System.setProperty("org.uncommons.reportng.escape-output", "false");
+
+            //Testng Reporting
+            Reporter.log("<br>Verification PASS for : " + actual + " / " + expected + "<br>");
+
+            ///Below for Extent Reports
+            extentTest.log(LogStatus.PASS, "Verifiction PASS for : " + actual + " / " + expected);
+
+        } catch (Throwable t) {
+            System.setProperty("org.uncommons.reportng.escape-output", "false");
+            TestUtil.captureScreenshot();
+
+            //Testng Reporting
+            Reporter.log("<br>Verification failure : " + t.getMessage() + "<br>");
+            Reporter.log("<br><a target=\"_blank\" href=\"" + TestUtil.screenshotName2 + "\"><img src=\"" + TestUtil.screenshotName2 + "\" height=50 width=50></img></a>");
+
+            ///Below for Extent Reports
+            extentTest.log(LogStatus.FAIL, "Verifiction failure with exception : " + t.getMessage());
+            extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(TestUtil.screenshotName1));
+        }
+    }
+
+
+    public static void verifyContains(String expected, String actual) {
+
+        try {
+            Assert.assertTrue(actual.toLowerCase().contains(expected.toLowerCase()));
+
+            System.setProperty("org.uncommons.reportng.escape-output", "false");
+
+            //Testng Reporting
+            Reporter.log("<br>Verification contains PASS for : " + actual + " / " + expected + "<br>");
+
+            ///Below for Extent Reports
+            extentTest.log(LogStatus.PASS, "Verifiction contains PASS for : " + actual + " / " + expected);
+
+        } catch (Throwable t) {
+            System.setProperty("org.uncommons.reportng.escape-output", "false");
+            TestUtil.captureScreenshot();
+
+            //Testng Reporting
+            Reporter.log("<br>Verification failure for contain : " + t.getMessage() + "<br>");
+            Reporter.log("<br><a target=\"_blank\" href=\"" + TestUtil.screenshotName2 + "\"><img src=\"" + TestUtil.screenshotName2 + "\" height=50 width=50></img></a>");
+
+            ///Below for Extent Reports
+            extentTest.log(LogStatus.FAIL, "Verifiction failure for contain with exception : " + t.getMessage());
+            extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(TestUtil.screenshotName1));
+        }
+    }
+
+
 
 
     @AfterSuite

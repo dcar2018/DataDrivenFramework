@@ -27,6 +27,7 @@ public class CustomListeners extends TestBase implements ITestListener {
 
         ///Below for Extent Reports
         extentTest.log(LogStatus.PASS, iTestResult.getName().toUpperCase(), " PASS");
+        extentTest.log(LogStatus.PASS, extentTest.addScreenCapture(TestUtil.screenshotName1));
         extentReport.endTest(extentTest);
         extentReport.flush();
 

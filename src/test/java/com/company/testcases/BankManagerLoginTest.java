@@ -18,6 +18,9 @@ public class BankManagerLoginTest extends TestBase {
         //Below line for log4j legger
         log.debug("Starting login as bank manager");
 
+        //SoftAssertion where the tests will still work even the verification fails
+        verifyEquals("abc","xyz");
+
         //below line simplified with the custom class for click
         //driver.findElement(By.cssSelector(or.getProperty("bmlBtn_CSS"))).click();
         click("bmlBtn_CSS");

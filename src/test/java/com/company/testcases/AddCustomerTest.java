@@ -1,6 +1,7 @@
 package com.company.testcases;
 
 import com.company.base.TestBase;
+import com.company.utilities.TestUtil;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,8 +12,9 @@ import org.testng.annotations.Test;
 
 public class AddCustomerTest extends TestBase {
 
-    @Test(dataProvider = "getData")
-    public void addCustomer(String firstName, String lastName, String postcode, String alerttext) throws InterruptedException {
+    //@Test(dataProvider = "getData") // modified with enhanced data provider in TestUtil
+    @Test(dataProviderClass = TestUtil.class, dataProvider = "dp")
+    public void addCustomerTest(String firstName, String lastName, String postcode, String alerttext) throws InterruptedException {
         //driver.get(config.getProperty("testsiteurl"));
 
         //driver.findElement(By.cssSelector(or.getProperty("bmlBtn"))).click();
@@ -25,22 +27,31 @@ public class AddCustomerTest extends TestBase {
         //driver.findElement(By.cssSelector(or.getProperty("postcode_CSS"))).sendKeys(postcode);
         //driver.findElement(By.cssSelector(or.getProperty("addBtn_CSS"))).click();
         click("addCustomerBtn_CSS");
-        type("firstName_CSS",firstName);
-        type("lastName_CSS",lastName);
-        type("postcode_CSS",postcode);
+        type("firstName_CSS", firstName);
+        type("lastName_CSS", lastName);
+        type("postcode_CSS", postcode);
         click("addBtn_CSS");
 
 
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
         Thread.sleep(2000);
-        Assert.assertTrue(alert.getText().contains(alerttext));
+        String actualText = alert.getText();
         alert.accept();
+
+        Assert.assertTrue(actualText.contains(alerttext));
+        verifyContains(alerttext,actualText);
+        //alert.accept();
         log.debug("End Add Customer Test");
         Reporter.log("Reporter > End Add Customer Test");
-        Assert.fail("Customer not added successfully");
+        //Assert.fail("Customer not added successfully");
+        Thread.sleep(2000);
     }
 
+
+    //below method enhanced and moved to TestUtil
+    /*
     @DataProvider
+
     public Object[][] getData() {
 
         String sheetName = "AddCustomerTest";
@@ -59,5 +70,5 @@ public class AddCustomerTest extends TestBase {
         }
         return data;
     }
-
+    */
 }
