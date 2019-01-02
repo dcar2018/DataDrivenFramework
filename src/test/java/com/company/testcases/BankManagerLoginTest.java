@@ -1,20 +1,25 @@
 package com.company.testcases;
 
 import com.company.base.TestBase;
+import com.company.utilities.TestUtil;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 public class BankManagerLoginTest extends TestBase {
 
     @Test
-    public void loginAsBankManager() throws InterruptedException {
+    public void bankManagerLoginTest() throws InterruptedException {
         //below moved to listener
         //System.setProperty("org.uncommons.reportng.escape-output", "false");
 
         //driver.get(config.getProperty("testsiteurl")); //if need to start test from HomePage
 
+        if (!TestUtil.isTestRunnable("BankManagerLoginTest", excel)) {
+            throw new SkipException("Skipping the test : BankManagerLoginTest as the run mode NO");
+        }
         //Below line for log4j legger
         log.debug("Starting login as bank manager");
 
