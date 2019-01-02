@@ -6,19 +6,24 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.SkipException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class OpenAccountTest extends TestBase {
 
-    @Test(dataProviderClass= TestUtil.class,dataProvider= "dp")
+    @Test(dataProviderClass = TestUtil.class, dataProvider = "dp")
     public void openAccountTest(String customer, String currency) throws InterruptedException {
+
+        if (!TestUtil.isTestRunnable("OpenAccountTest", excel)) {
+            throw new SkipException("Skipping the test : OpenAccountTest as the run mode NO");
+        }
 
         click("openaccount_CSS");
         Thread.sleep(2000);
-        select("customer_ID",customer);
+        select("customer_ID", customer);
         Thread.sleep(2000);
-        select("currency_CSS",currency);
+        select("currency_CSS", currency);
         click("process_CSS");
 
 
@@ -28,7 +33,6 @@ public class OpenAccountTest extends TestBase {
         Thread.sleep(2000);
 
     }
-
 
 
 }

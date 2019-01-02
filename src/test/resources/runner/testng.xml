@@ -16,7 +16,7 @@
         <classes>
             <class name="com.company.testcases.BankManagerLoginTest">
                 <methods>
-                    <include name="loginAsBankManagerTest"/>
+                    <include name="bankManagerLoginTest"/>
                 </methods>
             </class>
         </classes>

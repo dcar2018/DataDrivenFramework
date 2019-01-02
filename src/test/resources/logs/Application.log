@@ -1,26 +1,28 @@
-02/01/2019 08:23:05 devpinoyLogger Config file loaded
-02/01/2019 08:23:05 devpinoyLogger OR file loaded
-02/01/2019 08:23:10 devpinoyLogger Chrome launched
-02/01/2019 08:23:13 devpinoyLogger Navigated to http://www.way2automation.com/angularjs-protractor/banking/#/login
-02/01/2019 08:23:14 devpinoyLogger Starting login as bank manager
-02/01/2019 08:23:18 devpinoyLogger End login as bank manager
-02/01/2019 08:23:18 devpinoyLogger reading excel data rows and cols = 44
-02/01/2019 08:23:18 devpinoyLogger reading excel data Dan
-02/01/2019 08:23:18 devpinoyLogger reading excel data Car
-02/01/2019 08:23:18 devpinoyLogger reading excel data syd2148
-02/01/2019 08:23:18 devpinoyLogger reading excel data Customer added successfully
-02/01/2019 08:23:18 devpinoyLogger reading excel data Sam
-02/01/2019 08:23:18 devpinoyLogger reading excel data Tar
-02/01/2019 08:23:18 devpinoyLogger reading excel data syd2143
-02/01/2019 08:23:18 devpinoyLogger reading excel data Customer added successfully
-02/01/2019 08:23:18 devpinoyLogger reading excel data Pam
-02/01/2019 08:23:18 devpinoyLogger reading excel data Sen
-02/01/2019 08:23:18 devpinoyLogger reading excel data syd2146
-02/01/2019 08:23:18 devpinoyLogger reading excel data Customer added successfully
-02/01/2019 08:23:21 devpinoyLogger End Add Customer Test
-02/01/2019 08:23:26 devpinoyLogger End Add Customer Test
-02/01/2019 08:23:31 devpinoyLogger End Add Customer Test
-02/01/2019 08:23:34 devpinoyLogger reading excel data rows and cols = 22
-02/01/2019 08:23:34 devpinoyLogger reading excel data Dan Car
-02/01/2019 08:23:34 devpinoyLogger reading excel data Rupee
-02/01/2019 08:23:44 devpinoyLogger Test execution completed
+02/01/2019 16:34:54 devpinoyLogger Config file loaded
+02/01/2019 16:34:54 devpinoyLogger OR file loaded
+02/01/2019 16:35:00 devpinoyLogger Chrome launched
+02/01/2019 16:35:09 devpinoyLogger Navigated to http://www.way2automation.com/angularjs-protractor/banking/#/login
+02/01/2019 16:35:10 devpinoyLogger Starting login as bank manager
+02/01/2019 16:35:13 devpinoyLogger End login as bank manager
+02/01/2019 16:35:14 devpinoyLogger reading excel data : rows = 4 and cols = 5
+02/01/2019 16:35:14 devpinoyLogger reading excel data {firstname=Dan}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {lastname=Car, firstname=Dan}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {postcode=syd2148, lastname=Car, firstname=Dan}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2148, lastname=Car, firstname=Dan}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2148, lastname=Car, runmode=Y, firstname=Dan}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {firstname=Sam}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {lastname=Tar, firstname=Sam}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {postcode=syd2143, lastname=Tar, firstname=Sam}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2143, lastname=Tar, firstname=Sam}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2143, lastname=Tar, runmode=N, firstname=Sam}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {firstname=Pam}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {lastname=Sen, firstname=Pam}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {postcode=syd2146, lastname=Sen, firstname=Pam}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2146, lastname=Sen, firstname=Pam}
+02/01/2019 16:35:14 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2146, lastname=Sen, runmode=Y, firstname=Pam}
+02/01/2019 16:35:18 devpinoyLogger End Add Customer Test
+02/01/2019 16:35:23 devpinoyLogger End Add Customer Test
+02/01/2019 16:35:25 devpinoyLogger reading excel data rows and cols = 22
+02/01/2019 16:35:25 devpinoyLogger reading excel data Dan Car
+02/01/2019 16:35:25 devpinoyLogger reading excel data Rupee
+02/01/2019 16:35:26 devpinoyLogger Test execution completed

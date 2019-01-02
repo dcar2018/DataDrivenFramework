@@ -54,6 +54,9 @@ public class CustomListeners extends TestBase implements ITestListener {
 
     public void onTestSkipped(ITestResult iTestResult) {
 
+        extentTest.log(LogStatus.SKIP, iTestResult.getName().toUpperCase()+" Skipped the test as the run mode is NO");
+        extentReport.endTest(extentTest);
+        extentReport.flush();
     }
 
     public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {

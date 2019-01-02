@@ -1,51 +1,53 @@
-08:23:05,913 DEBUG devpinoyLogger:64 - Config file loaded
-08:23:05,917 DEBUG devpinoyLogger:75 - OR file loaded
-08:23:10,477 DEBUG devpinoyLogger:88 - Chrome launched
-08:23:13,549 DEBUG devpinoyLogger:96 - Navigated to http://www.way2automation.com/angularjs-protractor/banking/#/login
-08:23:14,837 DEBUG devpinoyLogger:19 - Starting login as bank manager
-08:23:18,041 DEBUG devpinoyLogger:32 - End login as bank manager
-08:23:18,569 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
-08:23:18,569 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
-08:23:18,573 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-08:23:18,573 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-08:23:18,573 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/dcarlima/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-08:23:18,925 DEBUG devpinoyLogger:53 - reading excel data rows and cols = 44
-08:23:18,937 DEBUG devpinoyLogger:61 - reading excel data Dan
-08:23:18,937 DEBUG devpinoyLogger:61 - reading excel data Car
-08:23:18,937 DEBUG devpinoyLogger:61 - reading excel data syd2148
-08:23:18,941 DEBUG devpinoyLogger:61 - reading excel data Customer added successfully
-08:23:18,941 DEBUG devpinoyLogger:61 - reading excel data Sam
-08:23:18,941 DEBUG devpinoyLogger:61 - reading excel data Tar
-08:23:18,941 DEBUG devpinoyLogger:61 - reading excel data syd2143
-08:23:18,945 DEBUG devpinoyLogger:61 - reading excel data Customer added successfully
-08:23:18,945 DEBUG devpinoyLogger:61 - reading excel data Pam
-08:23:18,945 DEBUG devpinoyLogger:61 - reading excel data Sen
-08:23:18,945 DEBUG devpinoyLogger:61 - reading excel data syd2146
-08:23:18,945 DEBUG devpinoyLogger:61 - reading excel data Customer added successfully
-08:23:21,997 DEBUG devpinoyLogger:44 - End Add Customer Test
-08:23:24,349 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
-08:23:24,349 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
-08:23:24,349 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-08:23:24,353 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-08:23:24,353 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/dcarlima/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-08:23:26,858 DEBUG devpinoyLogger:44 - End Add Customer Test
-08:23:29,246 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
-08:23:29,246 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
-08:23:29,246 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-08:23:29,246 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-08:23:29,246 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/dcarlima/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-08:23:31,662 DEBUG devpinoyLogger:44 - End Add Customer Test
-08:23:34,094 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
-08:23:34,094 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
-08:23:34,094 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-08:23:34,094 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-08:23:34,094 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/dcarlima/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-08:23:34,154 DEBUG devpinoyLogger:53 - reading excel data rows and cols = 22
-08:23:34,154 DEBUG devpinoyLogger:61 - reading excel data Dan Car
-08:23:34,154 DEBUG devpinoyLogger:61 - reading excel data Rupee
-08:23:43,332 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
-08:23:43,332 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
-08:23:43,332 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-08:23:43,332 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-08:23:43,332 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/dcarlima/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-08:23:44,272 DEBUG devpinoyLogger:234 - Test execution completed
+16:34:54,945 DEBUG devpinoyLogger:64 - Config file loaded
+16:34:54,952 DEBUG devpinoyLogger:75 - OR file loaded
+16:35:00,922 DEBUG devpinoyLogger:88 - Chrome launched
+16:35:09,642 DEBUG devpinoyLogger:96 - Navigated to http://www.way2automation.com/angularjs-protractor/banking/#/login
+16:35:10,931 DEBUG devpinoyLogger:24 - Starting login as bank manager
+16:35:13,992 DEBUG devpinoyLogger:37 - End login as bank manager
+16:35:14,449 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+16:35:14,451 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+16:35:14,455 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+16:35:14,458 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+16:35:14,459 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/dcarlima/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+16:35:14,948 DEBUG devpinoyLogger:75 - reading excel data : rows = 4 and cols = 5
+16:35:14,949 DEBUG devpinoyLogger:89 - reading excel data {firstname=Dan}
+16:35:14,950 DEBUG devpinoyLogger:89 - reading excel data {lastname=Car, firstname=Dan}
+16:35:14,951 DEBUG devpinoyLogger:89 - reading excel data {postcode=syd2148, lastname=Car, firstname=Dan}
+16:35:14,952 DEBUG devpinoyLogger:89 - reading excel data {alerttext=Customer added successfully, postcode=syd2148, lastname=Car, firstname=Dan}
+16:35:14,954 DEBUG devpinoyLogger:89 - reading excel data {alerttext=Customer added successfully, postcode=syd2148, lastname=Car, runmode=Y, firstname=Dan}
+16:35:14,955 DEBUG devpinoyLogger:89 - reading excel data {firstname=Sam}
+16:35:14,956 DEBUG devpinoyLogger:89 - reading excel data {lastname=Tar, firstname=Sam}
+16:35:14,957 DEBUG devpinoyLogger:89 - reading excel data {postcode=syd2143, lastname=Tar, firstname=Sam}
+16:35:14,957 DEBUG devpinoyLogger:89 - reading excel data {alerttext=Customer added successfully, postcode=syd2143, lastname=Tar, firstname=Sam}
+16:35:14,958 DEBUG devpinoyLogger:89 - reading excel data {alerttext=Customer added successfully, postcode=syd2143, lastname=Tar, runmode=N, firstname=Sam}
+16:35:14,959 DEBUG devpinoyLogger:89 - reading excel data {firstname=Pam}
+16:35:14,959 DEBUG devpinoyLogger:89 - reading excel data {lastname=Sen, firstname=Pam}
+16:35:14,960 DEBUG devpinoyLogger:89 - reading excel data {postcode=syd2146, lastname=Sen, firstname=Pam}
+16:35:14,961 DEBUG devpinoyLogger:89 - reading excel data {alerttext=Customer added successfully, postcode=syd2146, lastname=Sen, firstname=Pam}
+16:35:14,961 DEBUG devpinoyLogger:89 - reading excel data {alerttext=Customer added successfully, postcode=syd2146, lastname=Sen, runmode=Y, firstname=Pam}
+16:35:18,122 DEBUG devpinoyLogger:40 - End Add Customer Test
+16:35:20,501 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+16:35:20,502 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+16:35:20,502 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+16:35:20,503 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+16:35:20,503 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/dcarlima/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+16:35:20,552 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+16:35:20,553 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+16:35:20,553 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+16:35:20,554 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+16:35:20,554 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/dcarlima/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+16:35:23,065 DEBUG devpinoyLogger:40 - End Add Customer Test
+16:35:25,430 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+16:35:25,431 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+16:35:25,431 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+16:35:25,432 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+16:35:25,432 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/dcarlima/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+16:35:25,495 DEBUG devpinoyLogger:54 - reading excel data rows and cols = 22
+16:35:25,495 DEBUG devpinoyLogger:62 - reading excel data Dan Car
+16:35:25,496 DEBUG devpinoyLogger:62 - reading excel data Rupee
+16:35:25,498 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+16:35:25,498 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+16:35:25,499 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+16:35:25,500 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+16:35:25,500 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/dcarlima/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+16:35:26,768 DEBUG devpinoyLogger:234 - Test execution completed
