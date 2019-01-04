@@ -83,7 +83,7 @@ At the top of your GitHub repository's Quick Setup page, click to copy the remot
     press esc to exit insert mode, then type :x!
 ######
 ######
-###### -----------------------------------------------------------------
+###### --------------------------------------------------------------------------------------------------------------
 
 ## Tips to find locators in Chrome
 ######
@@ -93,26 +93,26 @@ At the top of your GitHub repository's Quick Setup page, click to copy the remot
 ######
 ######
 
-###### -----------------------------------------------------------------
+###### --------------------------------------------------------------------------------------------------------------
 
 ## Tips for Jenkins
 ######
-###### to stop: jenkins.exe stop
-###### to start: jenkins.exe star
-###### to restart: jenkins.exe restart
+        to stop: jenkins.exe stop
+        to start: jenkins.exe star
+        to restart: jenkins.exe restart
 ######
 ###### Strat Jenkins with below command to see the reports in proper html format
-####### java -Dhudson.model.DirectoryBrowserSupport.CSP="" -jar jenkins.war
-###### HTML publisher plugin installed to jenkins and
+        java -Dhudson.model.DirectoryBrowserSupport.CSP="" -jar jenkins.war
+###### Make sure that HTML publisher plugin installed to jenkins and
 ###### Post build action configured to view the results reports
 ######
 ###### Parameterizing
-###### Configure > Add parameter > Choice parameter >> Eg. Name : browser Choices : chrome, firefox
-###### in java, read the value as System.getenv("browser")
+        Configure > Add parameter > Choice parameter >> Eg. Name : browser Choices : chrome, firefox
+        in java, read the value as System.getenv("browser")
 ######
-######
+###### ![alt text](https://github.com/dcar2018/DataDrivenFramework/tree/master/readmeImgs/jenkins1.png)
 
 
-###### -----------------------------------------------------------------
+###### --------------------------------------------------------------------------------------------------------------
 
-###### -------------------------------- END ----------------------------
+###### -------------------------------- END -------------------------------------------------------------------------
