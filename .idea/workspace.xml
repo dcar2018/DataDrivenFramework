@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7dcdd89-237a-46de-b523-4ac77ab25ed3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/readmeImgs/jenkins1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/company/rough/TestHostAddForMails.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/company/utilities/MonitoringMail.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/company/utilities/TestConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/excel/testdata.xlsx" afterPath="$PROJECT_DIR$/src/test/resources/excel/testdata.xlsx" />
@@ -48,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/company/listeners/CustomListeners.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="528">
-              <caret line="95" column="5" lean-forward="true" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+              <caret line="95" column="5" lean-forward="false" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
-              <caret line="117" column="72" lean-forward="true" selection-start-line="117" selection-start-column="72" selection-end-line="117" selection-end-column="72" />
+              <caret line="117" column="72" lean-forward="false" selection-start-line="117" selection-start-column="72" selection-end-line="117" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -104,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/company/utilities/TestConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
-              <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+              <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -1021,7 +1023,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/company/listeners/CustomListeners.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
-          <caret line="95" column="5" lean-forward="true" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+          <caret line="95" column="5" lean-forward="false" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1031,7 +1033,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/company/utilities/TestConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1049,7 +1051,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
-          <caret line="117" column="72" lean-forward="true" selection-start-line="117" selection-start-column="72" selection-end-line="117" selection-end-column="72" />
+          <caret line="117" column="72" lean-forward="false" selection-start-line="117" selection-start-column="72" selection-end-line="117" selection-end-column="72" />
           <folding />
         </state>
       </provider>
