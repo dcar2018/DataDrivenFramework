@@ -110,7 +110,7 @@ At the top of your GitHub repository's Quick Setup page, click to copy the remot
         Configure > Add parameter > Choice parameter >> Eg. Name : browser Choices : chrome, firefox
         in java, read the value as System.getenv("browser")
 ######
-###### ![alt text](https://github.com/dcar2018/DataDrivenFramework/tree/master/readmeImgs/jenkins1.png)
+![alt text](https://github.com/dcar2018/DataDrivenFramework/blob/master/readmeImgs/jenkins1.png)
 
 
 ###### --------------------------------------------------------------------------------------------------------------
