@@ -24,7 +24,7 @@ public class BankManagerLoginTest extends TestBase {
         log.debug("Starting login as bank manager");
 
         //SoftAssertion where the tests will still work even the verification fails
-        verifyEquals("abc","xyz");
+        verifyEquals("abc","abc");
 
         //below line simplified with the custom class for click
         //driver.findElement(By.cssSelector(or.getProperty("bmlBtn_CSS"))).click();
@@ -38,7 +38,7 @@ public class BankManagerLoginTest extends TestBase {
 
         //Below line for testng reporter
         Reporter.log("Reporter > End login as bank manager");
-        Assert.fail("I failed the test");
+        //Assert.fail("I failed the test");
 
         //add log to Testng report
         //below moved to listener

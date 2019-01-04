@@ -51,6 +51,8 @@ public class TestBase {
 
     public ExtentReports extentReport = ExtentManager.getInstance();
     public static ExtentTest extentTest;
+public static String browser;
+
 
 
     @BeforeSuite
@@ -79,8 +81,20 @@ public class TestBase {
                 e.printStackTrace();
             }
 
+
+            //To map the selected browser from Jenkins parameters
+            if(System.getenv("browser")!= null && System.getenv("browser").trim() != ""){
+              browser = System.getenv("browser");
+            }
+            else{
+                browser = config.getProperty("browser");
+            }
+            config.setProperty("browser",browser);
+
+
+
             if (config.getProperty("browser").equals("firefox")) {
-                //System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
+                System.setProperty("webdriver.firefox.driver",System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\geckodriver.exe");
                 driver = new FirefoxDriver();
             } else if (config.getProperty("browser").equals("chrome")) {
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");

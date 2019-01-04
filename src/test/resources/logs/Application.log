@@ -1,28 +1,29 @@
-02/01/2019 16:34:54 devpinoyLogger Config file loaded
-02/01/2019 16:34:54 devpinoyLogger OR file loaded
-02/01/2019 16:35:00 devpinoyLogger Chrome launched
-02/01/2019 16:35:09 devpinoyLogger Navigated to http://www.way2automation.com/angularjs-protractor/banking/#/login
-02/01/2019 16:35:10 devpinoyLogger Starting login as bank manager
-02/01/2019 16:35:13 devpinoyLogger End login as bank manager
-02/01/2019 16:35:14 devpinoyLogger reading excel data : rows = 4 and cols = 5
-02/01/2019 16:35:14 devpinoyLogger reading excel data {firstname=Dan}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {lastname=Car, firstname=Dan}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {postcode=syd2148, lastname=Car, firstname=Dan}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2148, lastname=Car, firstname=Dan}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2148, lastname=Car, runmode=Y, firstname=Dan}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {firstname=Sam}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {lastname=Tar, firstname=Sam}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {postcode=syd2143, lastname=Tar, firstname=Sam}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2143, lastname=Tar, firstname=Sam}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2143, lastname=Tar, runmode=N, firstname=Sam}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {firstname=Pam}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {lastname=Sen, firstname=Pam}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {postcode=syd2146, lastname=Sen, firstname=Pam}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2146, lastname=Sen, firstname=Pam}
-02/01/2019 16:35:14 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2146, lastname=Sen, runmode=Y, firstname=Pam}
-02/01/2019 16:35:18 devpinoyLogger End Add Customer Test
-02/01/2019 16:35:23 devpinoyLogger End Add Customer Test
-02/01/2019 16:35:25 devpinoyLogger reading excel data rows and cols = 22
-02/01/2019 16:35:25 devpinoyLogger reading excel data Dan Car
-02/01/2019 16:35:25 devpinoyLogger reading excel data Rupee
-02/01/2019 16:35:26 devpinoyLogger Test execution completed
+04/01/2019 11:50:31 devpinoyLogger Config file loaded
+04/01/2019 11:50:31 devpinoyLogger OR file loaded
+04/01/2019 11:50:37 devpinoyLogger Chrome launched
+04/01/2019 11:50:40 devpinoyLogger Navigated to http://www.way2automation.com/angularjs-protractor/banking/#/login
+04/01/2019 11:50:41 devpinoyLogger Starting login as bank manager
+04/01/2019 11:50:44 devpinoyLogger End login as bank manager
+04/01/2019 11:50:45 devpinoyLogger reading excel data : rows = 4 and cols = 5
+04/01/2019 11:50:45 devpinoyLogger reading excel data {firstname=Dan}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {lastname=Car, firstname=Dan}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {postcode=syd2148, lastname=Car, firstname=Dan}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2148, lastname=Car, firstname=Dan}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2148, lastname=Car, runmode=Y, firstname=Dan}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {firstname=Sam}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {lastname=Tar, firstname=Sam}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {postcode=syd2143, lastname=Tar, firstname=Sam}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2143, lastname=Tar, firstname=Sam}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2143, lastname=Tar, runmode=Y, firstname=Sam}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {firstname=Pam}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {lastname=Sen, firstname=Pam}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {postcode=syd2146, lastname=Sen, firstname=Pam}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2146, lastname=Sen, firstname=Pam}
+04/01/2019 11:50:45 devpinoyLogger reading excel data {alerttext=Customer added successfully, postcode=syd2146, lastname=Sen, runmode=Y, firstname=Pam}
+04/01/2019 11:50:49 devpinoyLogger End Add Customer Test
+04/01/2019 11:50:53 devpinoyLogger End Add Customer Test
+04/01/2019 11:50:58 devpinoyLogger End Add Customer Test
+04/01/2019 11:51:01 devpinoyLogger reading excel data rows and cols = 22
+04/01/2019 11:51:01 devpinoyLogger reading excel data Dan Car
+04/01/2019 11:51:01 devpinoyLogger reading excel data Rupee
+04/01/2019 11:51:11 devpinoyLogger Test execution completed

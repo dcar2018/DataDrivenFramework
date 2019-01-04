@@ -1,14 +1,17 @@
 package com.company.listeners;
 
 import com.company.base.TestBase;
+import com.company.utilities.MonitoringMail;
+import com.company.utilities.TestConfig;
 import com.company.utilities.TestUtil;
 import com.relevantcodes.extentreports.LogStatus;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
-import org.testng.Reporter;
+import org.testng.*;
 
-public class CustomListeners extends TestBase implements ITestListener {
+import javax.mail.MessagingException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class CustomListeners extends TestBase implements ITestListener, ISuiteListener {
 
     public void onTestStart(ITestResult iTestResult) {
         ///Below for Extent Reports - to start the test
@@ -68,6 +71,27 @@ public class CustomListeners extends TestBase implements ITestListener {
     }
 
     public void onFinish(ITestContext iTestContext) {
+
+    }
+
+    public void onStart(ISuite iSuite) {
+
+    }
+
+    public void onFinish(ISuite iSuite) {
+        try {
+        MonitoringMail mail = new MonitoringMail();
+
+        String messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/DataDrivenFramework/Extent_20HTML_20Test_20Results_20Report/";
+        System.out.println("messageBody = " + messageBody);
+
+            mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+        catch (MessagingException e) {
+            e.printStackTrace();
+        }
 
     }
 }

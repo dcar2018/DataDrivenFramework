@@ -68,3 +68,51 @@ At the top of your GitHub repository's Quick Setup page, click to copy the remot
     // Most other tasks will be performed directly via the github interface
 
 
+######
+## Step 4
+
+#### Some more GIT commands
+
+
+###### to add missing folders and files
+    $ git add * -f
+###### unstage all the files mistakenly added
+    $ git reset
+###### How to exit git editmsg mode
+    Press i to enter inline insert mode. Type the description at the very top,
+    press esc to exit insert mode, then type :x!
+######
+######
+###### -----------------------------------------------------------------
+
+## Tips to find locators in Chrome
+######
+###### Chrome > Right click > Inspect elements
+###### ctrl+l >> clear
+###### To fid css locator - $$("") >>
+######
+######
+
+###### -----------------------------------------------------------------
+
+## Tips for Jenkins
+######
+###### to stop: jenkins.exe stop
+###### to start: jenkins.exe star
+###### to restart: jenkins.exe restart
+######
+###### Strat Jenkins with below command to see the reports in proper html format
+####### java -Dhudson.model.DirectoryBrowserSupport.CSP="" -jar jenkins.war
+###### HTML publisher plugin installed to jenkins and
+###### Post build action configured to view the results reports
+######
+###### Parameterizing
+###### Configure > Add parameter > Choice parameter >> Eg. Name : browser Choices : chrome, firefox
+###### in java, read the value as System.getenv("browser")
+######
+######
+
+
+###### -----------------------------------------------------------------
+
+###### -------------------------------- END ----------------------------
